@@ -31,7 +31,9 @@ namespace Ticketing
             mQuantity = int.Parse(txtQuantity.Text);
 
             if (chkDiscount.Checked)
-                { mDiscount = true; }
+                { mDiscount = true;
+                this.txtDiscount.Text = "6";
+            }
 
             if (radBalcony.Checked)
                 { mSection = 1; }

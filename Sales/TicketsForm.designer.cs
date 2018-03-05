@@ -30,6 +30,7 @@
         {
             this.lblQuantity = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.test = new System.Windows.Forms.TextBox();
             this.lblAmountDue = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
             this.chkDiscount = new System.Windows.Forms.CheckBox();
@@ -38,6 +39,8 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.lblDiscount = new System.Windows.Forms.Label();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +59,13 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(91, 20);
             this.txtQuantity.TabIndex = 1;
+            // 
+            // test
+            // 
+            this.test.Location = new System.Drawing.Point(111, 48);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(91, 20);
+            this.test.TabIndex = 101;
             // 
             // lblAmountDue
             // 
@@ -138,11 +148,30 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
+            // lblDiscount
+            // 
+            this.lblDiscount.AutoSize = true;
+            this.lblDiscount.Location = new System.Drawing.Point(51, 268);
+            this.lblDiscount.Name = "lblDiscount";
+            this.lblDiscount.Size = new System.Drawing.Size(55, 13);
+            this.lblDiscount.TabIndex = 11;
+            this.lblDiscount.Text = "Discount: ";
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Location = new System.Drawing.Point(111, 268);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Text = "testAmount";
+            this.txtDiscount.Size = new System.Drawing.Size(100, 20);
+            this.txtDiscount.TabIndex = 12;
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.txtDiscount);
+            this.Controls.Add(this.lblDiscount);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
             this.Controls.Add(this.chkDiscount);
@@ -164,6 +193,7 @@
 
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TextBox test;
         private System.Windows.Forms.Label lblAmountDue;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.CheckBox chkDiscount;
@@ -172,6 +202,8 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.Label lblDiscount;
+        private System.Windows.Forms.TextBox txtDiscount;
     }
 }
 
